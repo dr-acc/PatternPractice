@@ -28,4 +28,13 @@ defmodule ListsPractice do
   def sq([]), do: []
   def sq([head | tail]), do: [head*head | sq(tail)]
   #Function to square elements in list.
+
+  def is_even?([]), do: []
+  def is_even?(lst) do
+    rem(len(lst), 2) == 0
+  end
+
+  def sum_pairs([]), do: []
+  def sum_pairs([h1, h2 | t]), do: [h1 + h2 | sum_pairs(t)]
+  #Sum pairs.
 end
