@@ -18,5 +18,14 @@ defmodule ListsPractice do
 
   def sum([]), do: 0
   def sum([head | tail]), do: head + sum(tail)
-  #Function to sum elements of list.  
+  #Function to sum elements of list.
+
+  def double([]), do: []
+  def double([head | tail]), do: [2*head | double(tail)]
+  #Function to double every element in a list.
+  #CodingGnome says: "The key is hte symmetry between the pattern matching that deconstructs the input list and the list builder ([h|t]) that constructs the result.
+
+  def sq([]), do: []
+  def sq([head | tail]), do: [head*head | sq(tail)]
+  #Function to square elements in list.
 end
